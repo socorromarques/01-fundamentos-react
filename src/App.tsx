@@ -1,6 +1,21 @@
-function App() {
+import { Header} from './components/Header'
+import { Post } from './Post'
+ 
+import "./global.css"
+
+export function App() {
   return(
-    <h1>Hello Word</h1>
+    <div>
+      <Header />
+      <Post 
+        author="Socorro Marques"
+        content="Olha eu aqui de novo criando um novo projeto react!"
+      />
+      <Post 
+        author="Felipe Simoes"
+        conent= "Que fishe!"
+      />  
+    </div>
   )
 }
 
