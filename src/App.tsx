@@ -6,7 +6,7 @@ import styles from './App.module.css'
  
 import "./global.css"
 
-export function App() {
+export default function App() {
   return(
     <div>
       <Header />
