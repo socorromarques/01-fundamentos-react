@@ -6,7 +6,13 @@ import styles from './App.module.css'
  
 import "./global.css"
 
-export default function App() {
+interface PostProps {
+  author: string;
+  content: string;
+}
+
+export default function App(props: PostProps) {
+  const { author, content } = props
   return(
     <div>
       <Header />
