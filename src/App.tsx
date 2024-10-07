@@ -1,16 +1,16 @@
 import { Header} from './components/Header'
-import { Post } from './components/Post'
+import { Post, PostType } from './components/Post'
 import { Sidebar } from './components/Sidebar'
 
 import styles from './App.module.css'
  
 import "./global.css"
 
-const posts = [
+const posts: PostType[] = [
   {
     id: 1, 
     author: {
-      avatar_url: "https://github.com/SocorroMarques.png",
+      avatarUrl: "https://github.com/SocorroMarques.png",
       name: "Socorro Marques",
       role: "Web Developer"
     },
@@ -26,7 +26,7 @@ const posts = [
   {
     id: 2, 
     author: {
-      avatar_url: "https://github.com/felipesimoes.png",
+      avatarUrl: "https://github.com/felipesimoes.png",
       name: "Felipe Simões",
       role: "Senior Web Developer"
     },
@@ -50,9 +50,8 @@ export default function App() {
           {posts.map((post) => {
             return (
               <Post
-              author={{ avatar_url: post.author.avatar_url, name: post.author.name, role: post.author.role }}
-              content={post.content}
-              publishedAt={post.publishedAt}
+                key={post.id}
+                post={post}
               />
             )
           })}   
