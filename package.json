@@ -1,5 +1,5 @@
 {
-  "name": "01-fundamentos-reactjs",
+  "name": "01-fundamentos-reactjs-ts",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.6",
+    "date-fns": "^3.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
